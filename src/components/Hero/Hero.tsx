@@ -5,8 +5,9 @@ import decore from "@/assets/Hero/Decore1.png";
 import textDecore from "@/assets/Hero/Decore.png";
 import imageContent from "@/assets/Hero/Traveller1.png";
 import plane from "@/assets/Hero/Plane.png";
+import play from "@/assets/Icons/play.svg";
 import Text from "../Common/Text/Text";
-import { Plane } from "./Plane";
+import { ButtonPress, Plane } from "./Hero.styled";
 
 export default function Hero() {
   return (
@@ -45,6 +46,21 @@ export default function Hero() {
             Preferred to sportsmen it engrossed listening. Park gate sell they
             west hard for the.
           </Text>
+          <div className="mt-[34px] flex gap-[44px] items-center">
+            <ButtonPress className="bg-[#F1A501] shadow-xl shadow-orange-100 rounded-[10px]">
+                <Text size="h5" className="px-[26px] py-[20px] text-white">
+                  Find out more
+                </Text>
+            </ButtonPress>  
+            <div className="flex items-center">
+              <ButtonPress className="shadow-xl bg-[#DF6951] border-none rounded-full shadow-red-200 ">
+                <Image src={play} alt="play" className="mx-[20px] my-[20px]" />
+              </ButtonPress>
+              <Text size="h6" variant="secondary" className="ml-[20px]">
+                Play Demo
+              </Text>
+            </div>
+          </div>
         </div>
         <div>
           <Image
@@ -54,18 +70,10 @@ export default function Hero() {
             width={765}
           />
           <Plane className="z-20 absolute top-[170px] right-[590px]">
-            <Image
-              src={plane}
-              alt="plane"
-              
-            />
+            <Image src={plane} alt="plane" />
           </Plane>
           <Plane className="z-20 absolute top-[220px] right-[130px]">
-            <Image
-              src={plane}
-              alt="plane"
-              
-            />
+            <Image src={plane} alt="plane" />
           </Plane>
         </div>
       </div>
