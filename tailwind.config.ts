@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        volkhov: ["Volkhov", "serif"],
-        poppins: ["Poppins", "sans-serif"],
+        // volkhov: ["Volkhov"],
+        poppins: ["Poppins"],
       }
     },
   },
