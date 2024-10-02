@@ -67,7 +67,7 @@ export default function Hero() {
             src={imageContent}
             alt="imageContent"
             className="z-30 absolute right-[140px] top-[120px]"
-            width={765}
+            width={700}
           />
           <Plane className="z-20 absolute top-[170px] right-[590px]">
             <Image src={plane} alt="plane" />
