@@ -29,7 +29,7 @@ const Text: React.FC<TextProps> = ({
     h4: "text-[20px] leading-[29px]",
     h5: "text-[18px] leading-[26px]",
     h6: "text-[17px] leading-[24px]",
-    p: "text-[16px] leading-[30px]",
+    p: "text-[16px] leading-[26px]",
   };
   const fontFamilyClasses = {
     volkhov: "var(--font-volkhov)",

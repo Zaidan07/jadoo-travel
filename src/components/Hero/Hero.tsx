@@ -11,12 +11,12 @@ import { ButtonPress, Plane } from "./Hero.styled";
 
 export default function Hero() {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto relative">
       <Navbar />
       <Image
         src={decore}
         alt="decore"
-        className="absolute top-0 right-0 z-10"
+        className="absolute top-0 right-[-180px] z-10"
       />
 
       <div className="w-full max-w-[1200px] h-[764px] flex pt-[130px]  relative mx-auto">

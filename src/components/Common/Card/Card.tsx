@@ -1,23 +1,35 @@
-import React from "react";
-import Text from "../Text/Text";
+import React from 'react';
+import Text from '../Text/Text';
 
-interface CardProps {
+type CardProps = {
+  icon: React.ReactNode;
   title: string;
   description: string;
-  icon: JSX.Element;
-  variant?: "with-box" | "without-box";
-}
+};
 
-const Card: React.FC<CardProps> = ({ title, description, icon, variant = "with-box" }) => {
+const Card: React.FC<CardProps> = ({ icon, title, description }) => {
   return (
-    <div className="relative bg-white shadow-md rounded-lg p-4 w-64">
-      <div className="mb-4">{icon}</div>
-      <Text size="h4" variant="primary" className="font-semibold text-center">{title}</Text>
-      <Text size="p" variant="secondary" className="text-center mt-2">{description}</Text>
-      
-      {variant === "with-box" && (
-        <div className="absolute bottom-0 left-0 bg-orange-500 w-12 h-12 rounded-br-lg"></div>
-      )}
+    <div className='relative w-[302px] h-[347px] group'>
+      {/* Orange Box */}
+      <div className='absolute -left-4 bottom-4 w-[100px] h-[100px] bg-[#DF6951] rounded-tl-lg rounded-tr-lg rounded-br-lg z-0 transition-transform duration-300 transform scale-0 group-hover:scale-100'></div>
+
+      <div className='relative z-10 w-[250px] h-[300px] flex flex-col justify-center bg-white rounded-xl group-hover:shadow-lg transition-shadow duration-300 ease-in-out transform scale-95 group-hover:scale-100'>
+        <div className='w-[181px] h-[229px] flex flex-col justify-center items-center mx-auto'>
+          <div>{icon}</div>
+
+          <div className=''>
+            <Text size='h6' variant='primary' className='font-semibold text-center mb-[15px]'>
+              {title}
+            </Text>
+          </div>
+
+          <div>
+            <Text size='p' variant='secondary' className='text-center text-[15px] w-[181px] h-[78px]'>
+              {description}
+            </Text>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
