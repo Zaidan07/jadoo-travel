@@ -10,10 +10,16 @@ const planeFlight = keyframes`
 `;
 
 const buttonPress = keyframes`
-0% {
+ 0% {
     transform: scale(1);
   }
+  30% {
+    transform: scale(0.9);
+  }
   50% {
+    transform: scale(0.85);
+  }
+  70% {
     transform: scale(0.95);
   }
   100% {
@@ -28,8 +34,9 @@ export const Plane = styled.div`
 export const ButtonPress = styled.button`
   border: none;
   cursor: pointer;
+  transition: transform 0.5s ease;
 
   &:active {
-    animation: ${buttonPress} 0.2s ease-in-out forwards;
+    animation: ${buttonPress} 0.5s ease forwards;
   }
 `;
