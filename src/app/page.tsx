@@ -3,6 +3,7 @@ import Destination from "@/components/Destination/Destination";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Service from "@/components/Service/Service";
+import Subscribe from "@/components/Subscribe/Subscibe";
 import Testimonial from "@/components/Testimonial/Testimonial";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Destination/>
       <BookATrip/>
       <Testimonial/>
+      <Subscribe/>
       <Footer/>
     </main>
   );
