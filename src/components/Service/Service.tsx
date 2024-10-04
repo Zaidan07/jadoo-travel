@@ -23,14 +23,14 @@ export default function Service() {
             size="h2"
             variant="primary"
             fontFamily="volkhov"
-            className="pt-[10px]"
+            className="pt-[10px] font-bold"
           >
             We Offer Best Services
           </Text>
         </div>
       </div>
       <Image src={blink} alt="blink" className="absolute right-0" />
-      <div className="flex justify-center gap-[38px] w-auto h-auto pt-[150px]">
+      <div className="flex justify-center gap-[38px] w-auto h-auto pt-[100px]">
         <Card
           icon={<Image src={service1} alt="" className="mb-[30px]"/>}
           title="Calculated Weather"

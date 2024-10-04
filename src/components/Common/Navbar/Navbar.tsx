@@ -5,7 +5,7 @@ import Dropdown from "../Dropdown/Dropdown";
 
 export default function Navbar() {
   return (
-    <div className="w-[1168px] h-auto flex pt-[40px] items-center z-20 relative">
+    <div className="w-full h-auto flex pt-[20px] pb-[20px] items-center z-20 relative">
       <Image src={logo} alt="" width={115} height={33} className="cursor-pointer"/>
       <div className="flex gap-[62px] pl-[222px]">
         <Text size="h6" variant="default" className="font-semibold cursor-pointer select-none hover:text-[#5E6282]">

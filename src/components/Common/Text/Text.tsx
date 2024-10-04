@@ -18,7 +18,7 @@ const Text: React.FC<TextProps> = ({
 }) => {
   const variantClasses = {
     default: "text-[#212832]",
-    primary: "text-[#181E4B]",
+    primary: "text-[#14183E]",
     secondary: "text-[#5E6282]",
   };
 
