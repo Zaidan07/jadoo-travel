@@ -4,7 +4,7 @@ import axon from '@/assets/Company/axon.svg';
 import expedia from '@/assets/Company/expedia.svg';
 import jetstar from '@/assets/Company/jetstar.svg';
 import qantas from '@/assets/Company/qantas.svg';
-import { LogoImage } from './Company.styled';
+import Image from 'next/image';
 
 export default function Company() {
   const logos = [
@@ -22,10 +22,11 @@ export default function Company() {
           key={index}
           className="bg-white rounded-lg p-4 transition-transform transform hover:-translate-y-2 hover:shadow-lg"
         >
-          <LogoImage src={logo.src} alt={logo.alt} />
+          <div className="transition-all filter grayscale hover:grayscale-0">
+            <Image src={logo.src} alt={logo.alt} className="w-[162px] h-[32px] object-contain" />
+          </div>
         </div>
       ))}
     </div>
   );
 };
-
