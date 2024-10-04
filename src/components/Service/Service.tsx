@@ -3,7 +3,7 @@ import Text from "../Common/Text/Text";
 import blink from "@/assets/CardImage/blink.png";
 import Card from "../Common/Card/Card";
 import service1 from "@/assets/Icons/service1.svg";
-import service2 from "@/assets/Icons/service2.svg";
+import service2 from "@/assets/Icons/service33.png";
 import service3 from "@/assets/Icons/service3.svg";
 import service4 from "@/assets/Icons/service4.svg";
 
@@ -37,7 +37,7 @@ export default function Service() {
           description="Built Wicket longer admire do barton vanity itself do in it."
         />
         <Card
-          icon={<Image src={service2} alt="" className=""/>}
+          icon={<Image src={service2} alt="" className="mb-[30px]"/>}
           title="Best Flights"
           description="Engrossed listening. Park gate sell they west hard for the."
         />
