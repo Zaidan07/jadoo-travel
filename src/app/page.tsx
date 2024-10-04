@@ -1,4 +1,5 @@
 import BookATrip from "@/components/BookATrip/BookATrip";
+import Company from "@/components/Company/Company";
 import Destination from "@/components/Destination/Destination";
 import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <Destination/>
       <BookATrip/>
       <Testimonial/>
+      <Company/>
       <Subscribe/>
       <Footer/>
     </main>
