@@ -4,6 +4,7 @@ import { useState } from "react";
 import Text from "../Common/Text/Text";
 import FadeDiv from "./Testimonial.styled";
 import avatar1 from "@/assets/Company/avatar1.svg";
+import avatar2 from "@/assets/Company/avatar2.svg";
 import up from "@/assets/Icons/up.svg";
 import down from "@/assets/Icons/down.svg";
 import Image from "next/image";
@@ -23,7 +24,7 @@ const testimonials: Testimonial[] = [
     location: "Lahore, Pakistan",
   },
   {
-    avatar: "/path-to-avatar2.jpg",
+    avatar: avatar2,
     text: "“Another testimonial text that is inspirational and uplifting...”",
     name: "Sarah Williams",
     location: "New York, USA",
