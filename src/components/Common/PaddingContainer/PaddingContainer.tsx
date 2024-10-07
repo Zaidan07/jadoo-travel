@@ -6,7 +6,7 @@ interface PaddingProps {
 
 export default function PaddingContainer({ children }: PaddingProps) {
   return (
-    <div className="mx-auto max-w-full px-[20px] sm:max-w-[1440px] sm:px-[140px]">
+    <div className="mx-auto max-w-full px-[30px] md:max-w-[1440px] md:px-[140px]">
       {children}
     </div>
   )
