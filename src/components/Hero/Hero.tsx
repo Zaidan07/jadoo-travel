@@ -11,27 +11,27 @@ import { ButtonPress, Plane } from "./Hero.styled";
 
 export default function Hero() {
   return (
-    <div className="w-full h-auto relative">
+    <div className="relative h-auto w-full">
       <Navbar />
       <Image
         src={decore}
         alt="decore"
-        className="absolute top-0 right-[-180px] z-10"
+        className="absolute right-[-30px] top-0 z-10 md:right-[-180px]"
       />
 
-      <div className="w-full max-w-[1200px] h-[764px] flex pt-[130px]  relative mx-auto">
+      <div className="relative mx-auto flex h-[764px] w-full max-w-[1200px] flex-col pt-[130px] md:flex">
         <Image
           src={textDecore}
           alt="textDecore"
-          className="absolute z-10"
-          style={{ top: "250px", left: "240px" }}
+          className="absolute left-[130px] top-[200px] z-10 h-[6px] w-[185px] md:left-[240px] md:top-[250px]"
+          // style={{ top: "250px", left: "240px"}}
           width={385}
           height={12}
         />
-        <div className="w-[630px] h-[535px] z-10">
+        <div className="z-10 h-[228px] w-[331px] md:h-[535px] md:w-[630px]">
           <Text
             size="h4"
-            className="uppercase text-[#DF6951] pb-[24px] font-bold"
+            className="pb-[5px] font-bold uppercase text-[#DF6951] md:pb-[24px]"
           >
             Best Destinations around the world
           </Text>
@@ -39,44 +39,48 @@ export default function Hero() {
             size="h1"
             variant="primary"
             fontFamily="volkhov"
-            className="tracking-[-4px] pb-[30px]"
+            className="pb-[8px] tracking-[-1px] md:pb-[30px] md:tracking-[-4px]"
           >
             Travel, enjoy and live a new and full life
           </Text>
-          <Text size="p" variant="secondary" className="w-[477px] h-[90px]">
+          <Text
+            size="p"
+            variant="secondary"
+            className="h-auto w-[300px] md:h-[90px] md:w-[477px]"
+          >
             Built Wicket longer admire do barton vanity itself do in it.
             Preferred to sportsmen it engrossed listening. Park gate sell they
             west hard for the.
           </Text>
-          <div className="mt-[34px] flex gap-[44px] items-center">
-            <ButtonPress className="bg-[#F1A501] shadow-xl shadow-orange-100 rounded-[10px]">
-              <Text size="h5" className="px-[26px] py-[20px] text-white">
+          <div>
+            <Image
+              src={imageContent}
+              alt="imageContent"
+              className="absolute left-[10px] top-[510px] md:left-[420px] md:top-[20px] z-30"
+              width={780}
+            />
+            <Plane className="absolute top-[530px] left-[50px] md:left-[500px] md:top-[100px] z-20">
+              <Image src={plane} alt="plane" className="w-[100px] h-[65px] md:w-[167px] md:h-[154px]"/>
+            </Plane>
+            <Plane className="absolute top-[570px] left-[150px] md:left-[980px] md:top-[150px] z-20">
+              <Image src={plane} alt="plane" className="w-[100px] h-[65px] md:w-[167px] md:h-[154px]" />
+            </Plane>
+          </div>
+          <div className="mt-[34px] flex items-center gap-[20px] md:gap-[44px]">
+            <ButtonPress className="rounded-[10px] bg-[#F1A501] shadow-xl shadow-orange-100">
+              <Text size="h5" className="px-[8px] py-[7px] md:px-[26px] md:py-[20px] text-white">
                 Find out more
               </Text>
             </ButtonPress>
             <div className="flex items-center">
-              <ButtonPress className="shadow-xl bg-[#DF6951] border-none rounded-full shadow-red-200 ">
-                <Image src={play} alt="play" className="mx-[20px] my-[20px]" />
+              <ButtonPress className="rounded-full border-none bg-[#DF6951] shadow-xl shadow-red-200">
+                <Image src={play} alt="play" className="mx-[10px] my-[10px] md:mx-[20px] md:my-[20px]" />
               </ButtonPress>
-              <Text size="h6" variant="secondary" className="ml-[20px]">
+              <Text size="h6" variant="secondary" className="ml-[10px] md:ml-[20px]">
                 Play Demo
               </Text>
             </div>
           </div>
-        </div>
-        <div>
-          <Image
-            src={imageContent}
-            alt="imageContent"
-            className="z-30 absolute left-[420px] top-[20px]"
-            width={780}
-          />
-          <Plane className="z-20 absolute top-[100px] left-[500px]">
-            <Image src={plane} alt="plane" />
-          </Plane>
-          <Plane className="z-20 absolute top-[150px] left-[980px]">
-            <Image src={plane} alt="plane" />
-          </Plane>
         </div>
       </div>
     </div>
