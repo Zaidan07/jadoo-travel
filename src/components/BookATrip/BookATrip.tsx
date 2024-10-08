@@ -7,15 +7,15 @@ import Text from "../Common/Text/Text";
 
 export default function BookATrip() {
   return (
-    <div className="flex w-[1114px] h-[492px]">
-      <div className="w-[640px] h-[492px]">
+    <div className="flex flex-col md:flex-fow justify-center w-full md:w-[1114px] md:h-[492px] md:mt-[300px]">
+      <div className="w-full md:w-[640px] md:h-[492px]">
         <Text size="p" variant="secondary" className="font-semibold">
           Easy and Fast
         </Text>
-        <Text size="h2" variant="primary" fontFamily="volkhov" className="font-bold capitalize">
+        <Text size="h2" variant="primary" fontFamily="volkhov" className="font-bold capitalize pt-[10px] leading-[30px]">
           Book your next trip in 3 easy steps
         </Text>
-        <div className="w-[395px] h-[289px] pt-[37px] flex flex-col gap-[48px]">
+        <div className="w-fullmd:w-[395px] h-[289px] pt-[37px] flex flex-col gap-[48px]">
           <div className="w-full h-[64px] flex gap-[21px]">
             <Image src={icon1} alt="icon1" />
             <div className="w-full h-auto">
@@ -78,8 +78,8 @@ export default function BookATrip() {
           </div>
         </div>
       </div>
-      <div className="items-center flex">
-      <Image src={img} alt="img" className="ml-[118px]"/>
+      <div className="items-center flex pt-[20px] md:pt-0">
+      <Image src={img} alt="img" className="md:ml-[118px] w-full md:w-[655px] h-auto m:h-[789px]"/>
       </div>
     </div>
   );

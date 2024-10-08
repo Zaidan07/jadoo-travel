@@ -54,8 +54,8 @@ export default function Testimonial() {
   };
 
   return (
-    <div className="mx-auto mb-[112px] mt-[200px] flex h-auto w-full max-w-[1165px]">
-      <div className="flex h-auto w-full max-w-[409px] flex-col pt-[8px]">
+    <div className="mx-auto mb-[112px] mt-[200px] flex flex-col md:flex-row h-auto w-full md:w-[1165px]">
+      <div className="flex h-auto w-full md:w-[409px] flex-col pt-[8px]">
         <Text size="h6" variant="secondary" className="font-semibold uppercase">
           Testimonials
         </Text>
@@ -69,14 +69,12 @@ export default function Testimonial() {
         </Text>
       </div>
 
-      <div className="relative ml-[150px] mt-8 h-[245px] w-[504px] rounded-lg bg-white p-6 shadow-xl">
-        <div className="absolute -top-[30px] left-[-20px]">
+      <div className="relative md:ml-[150px] mt-[60px] md:mt-[32px] w-full md:h-[245px] md:w-[504px] rounded-lg bg-white p-6 shadow-xl">
+        <div className="absolute top-[25px] left-[10px] md:-top-[30px] md:left-[-20px]">
           <Image
             src={testimonials[currentIndex].avatar}
             alt="Avatar"
-            className="h-16 w-16 rounded-full border-4 border-white"
-            width={64}
-            height={64}
+            className="w-[40px] h-[40px] md:h-[64px] md:w-[64px] rounded-full border-4 border-none"
           />
         </div>
 
@@ -84,7 +82,7 @@ export default function Testimonial() {
           <Text
             size="p"
             variant="secondary"
-            className="px-[34px] leading-[32px]"
+            className="px-[34px] ;eading-[20px] md:leading-[32px]"
           >
             {testimonials[currentIndex].text}
           </Text>
@@ -98,7 +96,7 @@ export default function Testimonial() {
           </div>
         </FadeDiv>
       </div>
-      <div className="mt-[80px] flex flex-col gap-[57px] pl-[66px]">
+      <div className="mt-[80px] flex flex-col gap-[57px] pl-[66px] md:rotate-0 rotate-90">
         <button
           onClick={handlePrev}
           className="text-gray-500 transition-colors hover:text-gray-900"
