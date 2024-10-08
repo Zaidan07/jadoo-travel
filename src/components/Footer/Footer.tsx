@@ -8,30 +8,31 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="w-[1060px] h-[275px]">
-      <div className=" grid grid-cols-4">
-        <div className="w-[207px] h-[133px] flex flex-col gap-[19px]  ">
+    <div className="h-auto w-full bg-white px-4 py-8 md:px-[32px] md:py-[48px] lg:px-[30px] lg:py-[64px]">
+      <div className="grid grid-cols-1 gap-[50px] md:grid-cols-4">
+        <div className="flex flex-col gap-[16px] items-center md:items-start">
           <Text
             size="h3"
             variant="primary"
-            className="font-semibold text-[44px]"
+            className="text-[28px] font-semibold md:text-[44px]"
           >
             Jadoo.
           </Text>
           <Text
             size="p"
             variant="secondary"
-            className="text-[13px] leading-[16px]"
+            className="text-[13px] leading-[16px] md:text-[14px] text-center md:text-left"
           >
             Book your trip in minute, get full Control for much longer.
           </Text>
         </div>
-        <div className="w-[474px] h-[153px] flex gap-[72px] col-span-2 items-center justify-center ml-[38px]">
-          <div className="w-[108px] h-[151px] pt-[15px] flex flex-col">
+
+        <div className="flex flex-col items-center gap-6 text-center md:col-span-2 md:flex-row md:items-start md:justify-between md:text-left">
+          <div className="flex flex-col">
             <Text size="h4" variant="default" className="font-bold">
               Company
             </Text>
-            <div className="pt-[34px] flex flex-col gap-[12px]">
+            <div className="flex flex-col gap-2 pt-4">
               <Text size="h5" variant="secondary">
                 About
               </Text>
@@ -43,11 +44,12 @@ export default function Footer() {
               </Text>
             </div>
           </div>
-          <div className="w-[108px] h-[151px] pt-[15px] flex flex-col">
+
+          <div className="flex flex-col">
             <Text size="h4" variant="default" className="font-bold">
               Contact
             </Text>
-            <div className="pt-[34px] flex flex-col gap-[12px]">
+            <div className="flex flex-col gap-2 pt-4">
               <Text size="h5" variant="secondary">
                 Help/FAQ
               </Text>
@@ -55,44 +57,53 @@ export default function Footer() {
                 Press
               </Text>
               <Text size="h5" variant="secondary">
-                Affilates
+                Affiliates
               </Text>
             </div>
           </div>
-          <div className="w-[114pxpx] h-[151px] pt-[15px] flex flex-col">
+
+          <div className="flex flex-col">
             <Text size="h4" variant="default" className="font-bold">
               More
             </Text>
-            <div className="pt-[34px] flex flex-col gap-[12px]">
+            <div className="flex flex-col gap-2 pt-4">
               <Text size="h5" variant="secondary">
-                Airlinefees
+                Airline Fees
               </Text>
               <Text size="h5" variant="secondary">
                 Airline
               </Text>
               <Text size="h5" variant="secondary">
-                Low fare tips
+                Low Fare Tips
               </Text>
             </div>
           </div>
         </div>
-        <div className="w-[214px] h-[147px] flex flex-col ml-[30px]">
-          <div className="flex gap-[25px]">
-            <Image src={fb} alt="fb" />
-            <Image src={ig} alt="ig" />
-            <Image src={tw} alt="tw" />
+
+        <div className="flex flex-col items-center md:items-start">
+          <div className="flex justify-center gap-4">
+            <Image src={fb} alt="Facebook" />
+            <Image src={ig} alt="Instagram" />
+            <Image src={tw} alt="Twitter" />
           </div>
-          <Text size="h4" variant="secondary" className="pt-[26px]">
+          <Text
+            size="h4"
+            variant="secondary"
+            className="pt-6 text-center md:text-left"
+          >
             Discover our app
           </Text>
-          <div className="flex gap-[7px] pt-[16px]">
-            <Image src={playStore} alt="playStore" />
-            <Image src={appStore} alt="appStore" />
+          <div className="flex justify-center gap-3 pt-4">
+            <Image src={playStore} alt="Google Play" />
+            <Image src={appStore} alt="App Store" />
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-[84px] pb-[79px]">
-        <Text size="h6" variant="secondary">All rights reserved@jadoo.co</Text>
+
+      <div className="mt-8 flex items-center justify-center md:mt-12">
+        <Text size="h6" variant="secondary">
+          All rights reserved @jadoo.co
+        </Text>
       </div>
     </div>
   );

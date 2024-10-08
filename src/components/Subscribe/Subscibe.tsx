@@ -53,7 +53,7 @@ export default function Subscribe() {
       <Image
         src={blink}
         alt="blink"
-        className="absolute right-[-10px] md:right-[-90px] top-[250px] md:top-[310px] z-0"
+        className="absolute right-[-30px] md:right-[-90px] top-[230px] md:top-[310px] z-0 w-[80px] h-[80px] md:w-[153px] md:h-[166px]"
       />
     </div>
   );

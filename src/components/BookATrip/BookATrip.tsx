@@ -22,14 +22,14 @@ export default function BookATrip() {
               <Text
                 size="p"
                 variant="secondary"
-                className="font-bold text-[16px]"
+                className="font-bold text-[13px] pb-[4px] md:text-[16px]"
               >
                 Choose Destination
               </Text>
               <Text
                 size="p"
                 variant="secondary"
-                className="text-[16px] leading-[19px]"
+                className="text-[10px] md:text-[16px] leading-[13px] md:leading-[19px]"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                 tortor tempus.
@@ -42,14 +42,14 @@ export default function BookATrip() {
               <Text
                 size="p"
                 variant="secondary"
-                className="font-bold text-[16px]"
+                className="font-bold text-[13px] pb-[4px] md:text-[16px]"
               >
                 Make Payment
               </Text>
               <Text
                 size="p"
                 variant="secondary"
-                className="text-[16px] leading-[19px]"
+                className="text-[10px] md:text-[16px] leading-[13px] md:leading-[19px]"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                 tortor tempus.
@@ -62,14 +62,14 @@ export default function BookATrip() {
               <Text
                 size="p"
                 variant="secondary"
-                className="font-bold text-[16px]"
+                className="font-bold text-[13px] pb-[4px] md:text-[16px]"
               >
                 Reach Airport on Selected Date
               </Text>
               <Text
                 size="p"
                 variant="secondary"
-                className="text-[16px] leading-[19px]"
+                className="text-[10px] md:text-[16px] leading-[13px] md:leading-[19px]"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
                 tortor tempus.

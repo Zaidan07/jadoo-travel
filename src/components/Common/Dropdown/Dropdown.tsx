@@ -12,7 +12,7 @@ const Dropdown: React.FC = () => {
   };
 
   return (
-    <div className="relative inline-block text-left pl-[20px]">
+    <div className="relative inline-block text-left pl-[8px] md:pl-[20px]">
       <div>
         <button
           type="button"
