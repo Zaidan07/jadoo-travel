@@ -16,7 +16,7 @@ export default function Company() {
   ];
 
   return (
-    <div className="flex justify-around items-center py-[32px] mb-[111px]">
+    <div className="flex flex-col md:flex-row gap-[40px] md:gap-[20px] justify-around items-center py-[32px] mb-[111px]">
       {logos.map((logo, index) => (
         <div
           key={index}
