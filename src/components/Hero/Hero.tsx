@@ -23,10 +23,7 @@ export default function Hero() {
         <Image
           src={textDecore}
           alt="textDecore"
-          className="absolute left-[130px] top-[200px] z-10 h-[6px] w-[185px] md:left-[240px] md:top-[250px]"
-          // style={{ top: "250px", left: "240px"}}
-          width={385}
-          height={12}
+          className="absolute left-[130px] top-[200px] z-10 h-[6px] w-[185px] md:h-[12px] md:w-[385px] md:left-[240px] md:top-[250px]"
         />
         <div className="z-10 h-[228px] w-[331px] md:h-[535px] md:w-[630px]">
           <Text

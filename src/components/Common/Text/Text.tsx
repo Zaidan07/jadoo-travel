@@ -24,11 +24,11 @@ const Text: React.FC<TextProps> = ({
 
   const sizeClasses = {
     h1: "text-[44px] md:text-[84px] leading-[48px] md:leading-[89px] font-bold",
-    h2: "text-[50px] leading-[64px]",
+    h2: "text-[25px] md:text-[50px] leading-[20px] md:leading-[64px]",
     h3: "text-[30px] leading-[54px]",
     h4: "text-[14px] md:text-[20px] leading-[29px]",
     h5: "text-[12px] md:text-[18px] leading-[26px]",
-    h6: "md:text-[17px] leading-[24px]",
+    h6: "text-[12px] md:text-[17px] leading-[24px]",
     p: "text-[12px] md:text-[16px] leading-[15px] md:leading-[26px]",
   };
   const fontFamilyClasses = {
