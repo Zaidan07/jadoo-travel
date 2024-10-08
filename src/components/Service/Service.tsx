@@ -9,7 +9,7 @@ import service4 from "@/assets/Icons/service4.svg";
 
 export default function Service() {
   return (
-    <div className="w-full md:w-[1228px] h-[525px] mb-[1000px] md:mb-[250px] pt-[197px] flex flex-col relative">
+    <div className="w-full md:w-[1228px] h-[525px] mb-[1000px] md:mb-[180px] pt-[197px] flex flex-col relative">
       <div className="flex md:pl-[300px]">
         <div className="w-full h-auto md:w-[547px] md:h-[65px] text-center z-10">
           <Text

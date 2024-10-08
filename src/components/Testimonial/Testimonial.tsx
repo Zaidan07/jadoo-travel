@@ -54,7 +54,7 @@ export default function Testimonial() {
   };
 
   return (
-    <div className="mx-auto mb-[112px] mt-[200px] flex flex-col md:flex-row h-auto w-full md:w-[1165px]">
+    <div className="mx-auto mb-[112px] mt-[200px] md:mt-[300px] flex flex-col md:flex-row h-auto w-full md:w-[1165px]">
       <div className="flex h-auto w-full md:w-[409px] flex-col pt-[8px]">
         <Text size="h6" variant="secondary" className="font-semibold uppercase">
           Testimonials

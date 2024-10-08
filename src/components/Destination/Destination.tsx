@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function Destination() {
   return (
-    <div className="w-full h-auto md:w-[1102px] md:h-[617px] flex flex-col pt-[300px] md:mt-[50px] pb-[186px] justify-center relative">
-      <div className="md:w-[547px] md:h-[65px] text-center md:pl-[50px]">
+    <div className="w-full h-auto md:w-[1102px] md:h-[617px] flex flex-col pt-[300px] md:mt-[50px] mb-[186px] md:mb-[400px] items-center justify-center relative">
+      <div className="w-full md:w-[547px] md:h-[65px] text-center md:pl-[50px] flex flex-col justify-center">
         <Text size="h6" variant="secondary" className="uppercase font-semibold">
           Top Selling
         </Text>

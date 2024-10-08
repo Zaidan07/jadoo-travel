@@ -7,7 +7,7 @@ import Text from "../Common/Text/Text";
 
 export default function BookATrip() {
   return (
-    <div className="flex flex-col md:flex-fow justify-center w-full md:w-[1114px] md:h-[492px] md:mt-[300px]">
+    <div className="flex flex-col md:flex-row justify-center w-full md:w-[1114px] md:h-[492px] md:mt-[300px]">
       <div className="w-full md:w-[640px] md:h-[492px]">
         <Text size="p" variant="secondary" className="font-semibold">
           Easy and Fast
@@ -79,7 +79,7 @@ export default function BookATrip() {
         </div>
       </div>
       <div className="items-center flex pt-[20px] md:pt-0">
-      <Image src={img} alt="img" className="md:ml-[118px] w-full md:w-[655px] h-auto m:h-[789px]"/>
+      <Image src={img} alt="img" className="md:ml-[118px] w-full md:w-[655px] h-auto md:h-[789px]"/>
       </div>
     </div>
   );
