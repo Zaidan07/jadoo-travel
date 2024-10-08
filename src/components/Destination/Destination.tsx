@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function Destination() {
   return (
-    <div className="w-[1102px] h-[617px] flex flex-col mt-[290px] pb-[186px] justify-center items-center relative">
-      <div className="w-[547px] h-[65px] text-center pl-[50px]">
+    <div className="w-full h-auto md:w-[1102px] md:h-[617px] flex flex-col pt-[300px] md:mt-[50px] pb-[186px] justify-center relative">
+      <div className="md:w-[547px] md:h-[65px] text-center md:pl-[50px]">
         <Text size="h6" variant="secondary" className="uppercase font-semibold">
           Top Selling
         </Text>
@@ -22,7 +22,7 @@ export default function Destination() {
           Top Destinations
         </Text>
       </div>
-      <div className="flex justify-center items-center gap-[60px] pt-[90px] pl-[50px] z-30">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-[60px] pt-[90px] md:pl-[50px] z-30">
         <CardDestination
           destination="Rome, Italy"
           price="$5.42k"
@@ -43,7 +43,7 @@ export default function Destination() {
         />
       </div>
       <div className="z-20">
-        <Image src={decore} alt="decore" className="absolute top-[200px] right-[-60px]"/>
+        <Image src={decore} alt="decore" className="absolute top-[500px] md:top-[200px] right-[-35px] md:right-[-60px]"/>
       </div>
     </div>
   );

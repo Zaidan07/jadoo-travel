@@ -17,7 +17,7 @@ export default function CardDestination({
 }: CardDestinationProps) {
   return (
     <div className=" bg-white rounded-[24px] shadow-xl overflow-hidden hover:scale-95 transition-transform duration-300 ease-in-out">
-      <div className="relative w-[315px] h-[317px] ">
+      <div className="relative w-[250px] h-[280px] md:w-[315px] md:h-[317px] ">
         <Image
           src={imageSrc}
           alt={destination}
