@@ -16,7 +16,7 @@ export default function Hero() {
       <Image
         src={decore}
         alt="decore"
-        className="absolute right-[-35px] top-0 z-10 md:right-[-180px]"
+        className="absolute right-[-29px] top-0 z-10 md:right-[-179px]"
       />
 
       <div className="relative mx-auto flex h-[764px] w-full max-w-[1200px] flex-col pt-[70px] md:pt-[130px] md:flex">

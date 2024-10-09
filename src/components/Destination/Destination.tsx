@@ -43,7 +43,7 @@ export default function Destination() {
         />
       </div>
       <div className="z-20">
-        <Image src={decore} alt="decore" className="absolute top-[500px] md:top-[200px] right-[-35px] md:right-[-60px]"/>
+        <Image src={decore} alt="decore" className="absolute top-[500px] md:top-[370px] right-[-27px] md:right-[-60px]"/>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ export default function Subscribe() {
         alt="blue arrow"
         className="absolute right-[20px] md:right-[0px] top-[-20px] z-20 w-[50px] h-[50px] md:w-[70px] md:h-[70px]"
       />
-      <div className="relative flex w-full max-w-[1170px] flex-col items-center rounded-bl-[20px] rounded-br-[20px] rounded-tl-[50px] md:rounded-tl-[129px] rounded-tr-[20px] bg-[#f9f7fe] px-4 py-6 md:px-0 md:py-8">
+      <div className="relative flex w-full max-w-[1170px] flex-col items-center rounded-bl-[20px] rounded-br-[20px] rounded-tl-[50px] md:rounded-tl-[129px] rounded-tr-[20px] bg-[#f9f7fe] px-4 py-6 md:px-0 md:py-8 z-10">
         <Image
           src={spiral1}
           alt=""
@@ -53,7 +53,7 @@ export default function Subscribe() {
       <Image
         src={blink}
         alt="blink"
-        className="absolute right-[-30px] md:right-[-90px] top-[230px] md:top-[310px] z-0 w-[80px] h-[80px] md:w-[153px] md:h-[166px]"
+        className="absolute right-[-10px] md:right-[-90px] top-[230px] md:top-[310px] z-0 w-[80px] h-[80px] md:w-[153px] md:h-[166px]"
       />
     </div>
   );

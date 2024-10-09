@@ -29,7 +29,7 @@ export default function Service() {
           </Text>
         </div>
       </div>
-      <Image src={blink} alt="blink" className="absolute right-0 z-0 w-[100px] h-[120px] md:w-[153px] md:h-[166px]" />
+      <Image src={blink} alt="blink" className="absolute right-[30px] md:right-0 z-0 w-[90px] h-[110px] md:w-[153px] md:h-[166px]" />
       <div className="flex flex-col md:flex-row items-center justify-center gap-[38px] w-auto h-auto pt-[100px]">
         <Card
           icon={<Image src={service1} alt="" className="mb-[30px]"/>}
